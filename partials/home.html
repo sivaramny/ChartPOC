@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row" ng-controller="LineController">
+      <div class="col-md-12">
+        <div  class="panel panel-default">
+            <div class="panel-heading">Chart Demo</div>
+            <div class="panel-body">
+                    <div class="col-md-4">
+                      <div class="list-group">
+                        <div ui-draggable="true" drag="sonyData" drag-channel="A" class="list-group-item"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Summary :: Sony</div>
+                        <div ui-draggable="true" drag="samsungData" drag-channel="A" class="list-group-item"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Summary :: SamSung </div>
+                        <div ui-draggable="true" drag="lgData" drag-channel="A" class="list-group-item"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Summary :: LG</div>
+                      </div>
+                    </div>
+                    <div class="col-md-8" drop-channel="A" ui-on-drop="onDrop(1, $data)">
+                        <canvas
+                          tc-chartjs-line
+                          chart-data="chartData"
+                          chart-options="chartOptions"
+                          chart-click="onChartClick(event)"
+                          chart-legend="lineChart"
+                        ></canvas>
+                    </div>
+            </div>
+          </div>
+     </div>
+  </div>
+</div>

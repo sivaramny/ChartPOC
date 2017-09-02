@@ -1,0 +1,18 @@
+.myNavbar {
+  background: rgba(0, 0, 0, 0.52);
+  border-radius: 0;
+  color: #fff;
+}
+.myNavbar .navbar-nav > li > a {
+  color: #fff;
+  font-weight: bold;
+}
+.myNavbar .navbar-nav > li > a:hover {
+  background: transparent;
+  color: #f1cd44;
+}
+
+.list-group {
+  cursor: move;
+  cursor: -webkit-grabbing;
+}
